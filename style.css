@@ -1,0 +1,33 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 80;
+}
+
+.wallpaper{
+    padding-top: 50px;
+    
+}
+.Shop{
+    text-align: center;
+    margin-top: -300px;
+}
+.shop2{
+    text-align: center;
+    margin-top: -250px;
+}
+
+.listProcut{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: azure;
+    padding: 20px;
+    border-radius: 20px;
+    
+}

@@ -1,33 +1,173 @@
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 97%;
-    padding: 20px 50px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-container {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 80;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.wallpaper{
-    padding-top: 50px;
-    
-}
-.Shop{
-    text-align: center;
-    margin-top: -300px;
-}
-.shop2{
-    text-align: center;
-    margin-top: -250px;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.listProcut{
+.menu, .icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li, .icons li {
+    margin-right: 10px;
+}
+
+.menu li:last-child, .icons li:last-child {
+    margin-right: 0;
+}
+
+.menu a, .icons a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.menu a:hover, .icons a:hover {
+    background-color: #ddd;
+}
+
+.background {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 0;
+}
+
+.HomeShop {
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    text-decoration: none;
+}
+
+.Filters {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #F9F1E7;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #F9F1E7;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #c2cb4b;
+}
+
+.overlay {
+    position: absolute;
+    top: 70px; /* Ajuste conforme necessário */
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.content {
+    padding-top: 200px; /* Espaço para que o conteúdo fique abaixo da barra de filtros e da sobreposição */
+}
+
+.productList{
+    align-items: center;
+}
+
+.productList {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.productDiv {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: azure;
-    padding: 20px;
-    border-radius: 20px;
-    
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    max-width: 250px;
+
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
